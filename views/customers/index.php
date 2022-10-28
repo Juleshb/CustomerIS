@@ -14,6 +14,16 @@ $this->title = 'Customers';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="customers-index">
+<div class="jumbotron text-center bg-transparent">
+       
+
+        
+      
+       <span><?=Html::a('Employee',['/employee'], ['class' => 'btn btn-primary'])?></span>
+       <span><?=Html::a('Transaction',['/transaction'], ['class' => 'btn btn-primary'])?></span>
+       <span><?=Html::a('Service',['/service'], ['class' => 'btn btn-primary'])?></span>
+       <span><?=Html::a('Bill',['/bill'], ['class' => 'btn btn-primary'])?></span>
+   </div>
 
     <h1><?= Html::encode($this->title) ?></h1>
 
