@@ -18,7 +18,6 @@ class transactionSearch extends transaction
     {
         return [
             [['transaction_id', 'customer_id', 'bill_amount'], 'integer'],
-            [['customer_name'], 'safe'],
         ];
     }
 
@@ -62,8 +61,6 @@ class transactionSearch extends transaction
             'customer_id' => $this->customer_id,
             'bill_amount' => $this->bill_amount,
         ]);
-
-        $query->andFilterWhere(['like', 'customer_name', $this->customer_name]);
 
         return $dataProvider;
     }

@@ -19,8 +19,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'customer_id') ?>
 
-    <?= $form->field($model, 'customer_name') ?>
-
     <?= $form->field($model, 'bill_amount') ?>
 
     <div class="form-group">
